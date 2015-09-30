@@ -17,7 +17,7 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "Storm Viewer"
+        self.title = "⚡️Brewing Storms⚡️"
         let fm = NSFileManager.defaultManager()
         let path = NSBundle.mainBundle().resourcePath!
         let items = try! fm.contentsOfDirectoryAtPath(path)
