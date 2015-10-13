@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     
+    // MARK: Class Variables
+    var countries = [String]()
+    var score = 0
+    var correctAnswer = 0
+    var buttons = [UIButton]()
+    
     // MARK: Actions
     @IBAction func buttonTapped(sender: UIButton) {
         if sender.tag == correctAnswer {
@@ -35,12 +41,6 @@ class ViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: askQuestion))
         presentViewController(ac, animated: true, completion: nil)
     }
-    
-    // MARK: Class Variables
-    var countries = [String]()
-    var score = 0
-    var correctAnswer = 0
-    var buttons = [UIButton]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AmB-6J-MKb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5r-y9-FSU">
                                 <rect key="frame" x="200" y="100" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A5r-y9-FSU" secondAttribute="height" multiplier="2:1" id="Iwa-9Y-ZCJ"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmE-MM-f4w"/>
@@ -27,6 +31,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-Lz-wQ0">
                                 <rect key="frame" x="200" y="230" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J2f-Lz-wQ0" secondAttribute="height" multiplier="2:1" id="n5G-QE-4Hh"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixN-PR-uap"/>
@@ -35,6 +42,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZB-3B-x8y">
                                 <rect key="frame" x="200" y="360" width="200" height="100"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TZB-3B-x8y" secondAttribute="height" multiplier="2:1" id="wRj-fn-f79"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GV0-If-exb"/>
@@ -44,10 +54,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="J2f-Lz-wQ0" firstAttribute="height" secondItem="A5r-y9-FSU" secondAttribute="height" id="41r-PU-v1J"/>
                             <constraint firstItem="J2f-Lz-wQ0" firstAttribute="centerX" secondItem="A5r-y9-FSU" secondAttribute="centerX" id="5KX-bb-iiy"/>
                             <constraint firstItem="A5r-y9-FSU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="N5X-Nn-XxA"/>
                             <constraint firstItem="TZB-3B-x8y" firstAttribute="top" secondItem="J2f-Lz-wQ0" secondAttribute="bottom" constant="30" id="PuR-YG-reX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TZB-3B-x8y" secondAttribute="bottom" constant="20" id="SF4-05-iHM"/>
                             <constraint firstItem="J2f-Lz-wQ0" firstAttribute="top" secondItem="A5r-y9-FSU" secondAttribute="bottom" constant="30" id="W6c-u9-dac"/>
+                            <constraint firstItem="TZB-3B-x8y" firstAttribute="height" secondItem="J2f-Lz-wQ0" secondAttribute="height" id="bs2-oF-ZFf"/>
                             <constraint firstItem="TZB-3B-x8y" firstAttribute="centerX" secondItem="J2f-Lz-wQ0" secondAttribute="centerX" id="kfl-aX-u6f"/>
                             <constraint firstItem="A5r-y9-FSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qRC-yh-fsM"/>
                         </constraints>
