@@ -13,10 +13,11 @@
 		EE3494B01C475F9E0086998A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3494AF1C475F9E0086998A /* Assets.xcassets */; };
 		EE3494B31C475F9E0086998A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3494B11C475F9E0086998A /* LaunchScreen.storyboard */; };
 		EE3494BB1C47626E0086998A /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3494BA1C47626E0086998A /* PersonCell.swift */; };
+		EEDCA5D91C48DC02005E288C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA5D81C48DC02005E288C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE3494A51C475F9E0086998A /* HWSProject10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWSProject10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3494A51C475F9E0086998A /* Names2Faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Names2Faces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3494A81C475F9E0086998A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE3494AA1C475F9E0086998A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE3494AD1C475F9E0086998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		EE3494B21C475F9E0086998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE3494B41C475F9E0086998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3494BA1C47626E0086998A /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		EEDCA5D81C48DC02005E288C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		EE3494A61C475F9E0086998A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE3494A51C475F9E0086998A /* HWSProject10.app */,
+				EE3494A51C475F9E0086998A /* Names2Faces.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +65,7 @@
 				EE3494B11C475F9E0086998A /* LaunchScreen.storyboard */,
 				EE3494B41C475F9E0086998A /* Info.plist */,
 				EE3494BA1C47626E0086998A /* PersonCell.swift */,
+				EEDCA5D81C48DC02005E288C /* Person.swift */,
 			);
 			path = HWSProject10;
 			sourceTree = "<group>";
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE3494A41C475F9E0086998A /* HWSProject10 */ = {
+		EE3494A41C475F9E0086998A /* Names2Faces */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE3494B71C475F9E0086998A /* Build configuration list for PBXNativeTarget "HWSProject10" */;
+			buildConfigurationList = EE3494B71C475F9E0086998A /* Build configuration list for PBXNativeTarget "Names2Faces" */;
 			buildPhases = (
 				EE3494A11C475F9E0086998A /* Sources */,
 				EE3494A21C475F9E0086998A /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = HWSProject10;
+			name = Names2Faces;
 			productName = HWSProject10;
-			productReference = EE3494A51C475F9E0086998A /* HWSProject10.app */;
+			productReference = EE3494A51C475F9E0086998A /* Names2Faces.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE3494A01C475F9E0086998A /* Build configuration list for PBXProject "HWSProject10" */;
+			buildConfigurationList = EE3494A01C475F9E0086998A /* Build configuration list for PBXProject "Names2Faces" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE3494A41C475F9E0086998A /* HWSProject10 */,
+				EE3494A41C475F9E0086998A /* Names2Faces */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +144,7 @@
 			files = (
 				EE3494BB1C47626E0086998A /* PersonCell.swift in Sources */,
 				EE3494AB1C475F9E0086998A /* ViewController.swift in Sources */,
+				EEDCA5D91C48DC02005E288C /* Person.swift in Sources */,
 				EE3494A91C475F9E0086998A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +261,7 @@
 				INFOPLIST_FILE = HWSProject10/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ke.co.muya.HWSProject10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Names2Faces;
 			};
 			name = Debug;
 		};
@@ -268,14 +272,14 @@
 				INFOPLIST_FILE = HWSProject10/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ke.co.muya.HWSProject10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Names2Faces;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE3494A01C475F9E0086998A /* Build configuration list for PBXProject "HWSProject10" */ = {
+		EE3494A01C475F9E0086998A /* Build configuration list for PBXProject "Names2Faces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE3494B51C475F9E0086998A /* Debug */,
@@ -284,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE3494B71C475F9E0086998A /* Build configuration list for PBXNativeTarget "HWSProject10" */ = {
+		EE3494B71C475F9E0086998A /* Build configuration list for PBXNativeTarget "Names2Faces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE3494B81C475F9E0086998A /* Debug */,
 				EE3494B91C475F9E0086998A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
