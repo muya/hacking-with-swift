@@ -18,3 +18,12 @@ UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1)
 CGFloat(arc4random_uniform(256))
 
 UIColor(red: 65.0, green: 97, blue: 193, alpha: 0)
+
+let defaults = NSUserDefaults.standardUserDefaults()
+
+let dreAlbums: [String] = ["Compton", "Chronic"]
+defaults.setObject(dreAlbums, forKey: "dre")
+
+let extract = defaults.objectForKey("dre") as? [String] ?? [String]()
+
+

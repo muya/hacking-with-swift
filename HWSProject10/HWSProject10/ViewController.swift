@@ -17,6 +17,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // load existing people data
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let savedPeople = defaults.objectForKey("people") as? NSData {
+            people = NSKeyedUnarchiver.unarchiveObjectWithData(savedPeople) as! [Person]
+        }
+        
         // add button to allow users to add photo
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewPerson")
     }
@@ -24,6 +30,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func save() {
+        let savedData = NSKeyedArchiver.archivedDataWithRootObject(people)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(savedData, forKey: "people")
     }
 
     // MARK: Delegate conforming
@@ -65,6 +77,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             selectedPerson.name = newName.text!
             
             self.collectionView.reloadData()
+            self.save()
         })
         
         presentViewController(ac, animated: true, completion: nil)
@@ -98,6 +111,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let person = Person(name: "Unknown", image: imageName)
         people.append(person)
         collectionView.reloadData()
+        self.save()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
